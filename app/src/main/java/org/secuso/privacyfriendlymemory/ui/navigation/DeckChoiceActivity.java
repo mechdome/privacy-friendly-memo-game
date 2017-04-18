@@ -125,7 +125,7 @@ public class DeckChoiceActivity extends AppCompatPreferenceActivity {
             sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.getActivity().getApplicationContext());
             setupCheckboxes();
             setupSelection();
-            createOptionsItemListener();
+//            createOptionsItemListener();
         }
 
         @Override
@@ -208,10 +208,10 @@ public class DeckChoiceActivity extends AppCompatPreferenceActivity {
         private void setupCheckboxes() {
             firstBox = (CheckBoxPreference) findPreference("deck1_key");
             secondBox = (CheckBoxPreference) findPreference("deck2_key");
-            thirdBox = (CheckBoxPreference) findPreference(("custom_deck_key"));
+//            thirdBox = (CheckBoxPreference) findPreference(("custom_deck_key"));
             checkBoxes.add(firstBox);
             checkBoxes.add(secondBox);
-            checkBoxes.add(thirdBox);
+//            checkBoxes.add(thirdBox);
             for (CheckBoxPreference checkbox : checkBoxes) {
                 checkbox.setOnPreferenceClickListener(this);
             }
@@ -220,32 +220,32 @@ public class DeckChoiceActivity extends AppCompatPreferenceActivity {
         private void setupSelection() {
             CardDesign selectedDesign = CardDesign.get(sharedPreferences.getInt(Constants.SELECTED_CARD_DESIGN, 1));
             Set<String> selectedCustomImages = sharedPreferences.getStringSet(Constants.CUSTOM_CARDS_URIS, new HashSet<String>());
-            if (selectedCustomImages.isEmpty()) {
-                thirdBox.setEnabled(false);
-            }
+//            if (selectedCustomImages.isEmpty()) {
+//                thirdBox.setEnabled(false);
+//            }
 
             switch (selectedDesign) {
                 case FIRST:
                     firstBox.setChecked(true);
                     secondBox.setChecked(false);
-                    thirdBox.setChecked(false);
+//                    thirdBox.setChecked(false);
                     break;
                 case SECOND:
                     firstBox.setChecked(false);
                     secondBox.setChecked(true);
-                    thirdBox.setChecked(false);
+//                    thirdBox.setChecked(false);
                     break;
-                case CUSTOM:
-                    if (selectedCustomImages.isEmpty()) {
-                        firstBox.setChecked(true);
-                        secondBox.setChecked(false);
-                        thirdBox.setChecked(false);
-                    } else {
-                        firstBox.setChecked(false);
-                        secondBox.setChecked(false);
-                        thirdBox.setChecked(true);
-                    }
-                    break;
+//                case CUSTOM:
+//                    if (selectedCustomImages.isEmpty()) {
+//                        firstBox.setChecked(true);
+//                        secondBox.setChecked(false);
+//                        thirdBox.setChecked(false);
+//                    } else {
+//                        firstBox.setChecked(false);
+//                        secondBox.setChecked(false);
+//                        thirdBox.setChecked(true);
+//                    }
+//                    break;
             }
         }
 

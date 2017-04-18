@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.mechdome.aboutmechdome.AboutMechDomeActivity;
+
 import org.secuso.privacyfriendlymemory.ui.navigation.AboutActivity;
 import org.secuso.privacyfriendlymemory.ui.navigation.DeckChoiceActivity;
 import org.secuso.privacyfriendlymemory.ui.navigation.HelpActivity;
@@ -70,6 +72,10 @@ public abstract class AppCompatDrawerActivity extends AppCompatActivity implemen
                 break;
             case R.id.menu_about:
                 intent = new Intent(this, AboutActivity.class);
+                break;
+
+            case R.id.menu_about_mechdome:
+                intent = new Intent(this, AboutMechDomeActivity.class);
                 break;
         }
 

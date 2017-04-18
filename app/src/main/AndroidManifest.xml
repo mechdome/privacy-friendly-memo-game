@@ -34,6 +34,7 @@
                   android:configChanges="orientation|screenSize">
                  <!-- android:screenOrientation="portrait"> -->
         </activity>
+        <meta-data android:name="md_remove_ads" android:value="org.secuso.privacyfriendlymemory.ui.MechDomeAd" />
     </application>
 
 </manifest>
