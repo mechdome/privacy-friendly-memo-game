@@ -5,11 +5,7 @@ Privacy Friendly Memo-Game is a card game. The task is to find matching pairs wi
 ## Motivation 
 
 As it is part of the Privacy Friendly Apps developed by the SECUSO research group of the Technische 
-Universtität Darmstadt in Germany it is optimized due to user's privacy. More information can be found here [secuso.org/pfa].
-
-## Download and more information
-
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/repository/browse/?fdid=org.secuso.privacyfriendlymemory)<a href="https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlymemory"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60"></a>
+Universtität Darmstadt in Germany it is optimized due to user's privacy.
 
 ### Building
 
@@ -21,6 +17,8 @@ Mininum SDK: 17
 Target SDK: 25 
 
 ## License
+
+Privacy Friendly Memo-Game is lisenced under the GPLv3. Copyright (C) 2017 Mechdome, Inc
 
 Privacy Friendly Memo-Game is lisenced under the GPLv3. Copyright (C) 2016 Hannes Hofmann
 
